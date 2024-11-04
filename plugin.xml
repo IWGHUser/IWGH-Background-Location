@@ -92,6 +92,16 @@
         </config-file>
      </platform>
 
+     <platform name="android">
+      <!-- Cordova Background Geolocation License -->
+      <config-file parent="/manifest/application" target="app/src/main/plugin.xml">
+          <meta-data
+            android:name="com.transistorsoft.locationmanager.license"
+            android:value="56bbbb843002a23c88df86446083df10a3d707833c43f8245069c1c04f45a39c" />
+      </config-file>
+
+     </platform>
+
      <!-- Browser (mock) -->
      <platform name="browser">
         <config-file target="config.xml" parent="/*">
